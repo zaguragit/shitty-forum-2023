@@ -1,0 +1,11 @@
+<header>
+    <h1>Settings</h1>
+</header>
+<form method=post action=/do/update-settings>
+    <label for=pronouns>Pronouns</label>
+    <input type=text name=pronouns id=pronouns value="{{pronouns}}">
+    <label for=pronouns>About me / Bio / HTML to include in ur page</label>
+    <textarea name=about id=about>{{about}}</textarea>
+    <input type=submit value="Save">
+    <span class=error>{{insert-error-here}}</span>
+</form>

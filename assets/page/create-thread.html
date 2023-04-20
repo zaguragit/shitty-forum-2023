@@ -1,0 +1,11 @@
+<header>
+    <h1>Create a New Thread</h1>
+</header>
+<form method=post action=/do/thread>
+    <input type=hidden name=topic value="{{topic-name}}">
+    <label for=title>Title</label>
+    <input type=text name=title id=title required>
+    <label for=first>First reply</label>
+    <textarea name=first id=first placeholder="Tell us, what was so important, that it required a new thread" required></textarea>
+    <input type=submit value="Scream into the void">
+</form>

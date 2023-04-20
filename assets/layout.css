@@ -1,0 +1,125 @@
+@media (min-width: 560px) {
+    body {
+        display: grid;
+        grid-template-columns: 256px 1fr;
+        gap: 12px;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+    body > * { overflow-y: auto; }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+@media (min-width: 860px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+body {
+    padding: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sidebar > section { margin-bottom: 12px; }
+
+.top-bar > nav { display: flex; }
+.top-bar > nav > a:not(:hover) { text-decoration: none; }
+.top-bar > nav > a:not(.home) { margin-left: 1ch; }
+.top-bar > nav > a.home { flex-grow: 1; }
+
+.sidebar > section > h2:first-child {
+    margin-top: 0;
+}
+
+ul { padding-left: 0; margin: 0; }
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1em; }
+h1 { margin: 0 0 .5em; }
+h2, h3 { margin: 1em 0 .5em; }
+
+dd { margin-left: 24px; }
+dt { margin-top: .5em; }
+
+li {
+    margin: .5em 0;
+    list-style-position: inside;
+}
+
+section:not(.searchbar) { padding: 16px; }
+
+main > header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    margin-bottom: 1em;
+}
+main > header > h1 { margin: 0; }
+main > header > a, main > header > form {
+    flex-grow: 1;
+    text-align: right;
+    display: inline;
+}
+main > header > a:not(:hover) { text-decoration: none; }
+main > header > form > input[type="submit"] { margin: 0; }
+main > header > .pronouns { margin-left: 1ch; }
+
+
+.reply, .reply-form { margin-top: 1.2em; }
+.thread > header, .reply > header { margin-bottom: .5em; }
+.thread > p, .reply > p { margin: 0; }
+
+.thread {
+    padding: 12px;
+}
+.thread > header > h3 { margin-top: 0; }
+
+.searchbar > form {
+    flex-direction: row;
+}
+
+.searchbar input[type="search"] {
+    padding: 12px;
+    width: 128px;
+    flex-grow: 1;
+    flex-basis: 128px;
+}
+
+.searchbar input[type="search"] + input[type="submit"] {
+    padding: 12px;
+    margin: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form > input[type="text"],
+form > input[type="password"],
+form > textarea {
+    resize: vertical;
+    padding: 12px;
+}
+form > input[type="submit"] {
+    font-size: .8em;
+    padding: 6px;
+    align-self: start;
+    cursor: pointer;
+}
+form > label { margin-bottom: .5em; }
+form > label:not(:first-child), input[type="submit"] { margin-top: 1em; }
+form > label::after { content: ':' }
+.error:not(:empty) {
+    display: block;
+    margin: 1em 0;
+}

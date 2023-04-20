@@ -1,0 +1,12 @@
+<header>
+    <h1>Login</h1>
+</header>
+<p>Welcome back &lt;3</p>
+<span class=error>{{insert-error-here}}</span>
+<form method=post action=/auth/login>
+    <label for=user_name>User name</label>
+    <input type=text name=user_name id=user_name pattern="[a-zA-Z0-9_-]+" required>
+    <label for=password>Password</label>
+    <input type=password name=password id=password required>
+    <input type=submit value="Enter the mainframe">
+</form>

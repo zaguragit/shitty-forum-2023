@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>Lamda Network</title>
+        <meta name=description content="Place with text">
+        <meta name=no-email-collection>
+        <meta name=referrer content=no-referrer>
+        <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <link rel=stylesheet href=/layout.css>
+        <link rel=stylesheet href=/theme.css>
+        <link rel=icon href=/favicon.png>
+    </head>
+    <body>
+        <div class=sidebar>
+            <section class=top-bar>
+                {{session-area}}
+            </section>
+            <section class=searchbar>
+                <form method=get action=/search>
+                    <input type="search" id="search" name="q" placeholder="Search" aria-label="Search through lamda forum" required>
+                    <input type="submit" value="Go">
+                </form>
+            </section>
+            {{fav-thread-list}}
+            {{fav-topic-list}}
+            {{admin-tools}}
+        </div>
+        <section>
+            <main>{{content}}</main>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        background-color: #19191a;
+        color: #dbdbdb;
+    }
+    section {
+        background-color: #222227;
+        border: 1px solid #0e0e0e;
+    }
+    section.top-bar { background: #3a2174; }
+    a { color: #9d93ff; }
+    h1, h2, h3, em { color: #ffffff; }
+    main > header > .pronouns, .reply > header, .thread {
+        color: #88888f;
+    }
+    main > header { border-bottom: 1px dashed #88888f; }
+    form > input, form > textarea {
+        border: 1px solid #0e0e0e;
+    }
+    form > input[type="text"],
+    form > input[type="password"],
+    form > textarea {
+        background-color: #19191a;
+    }
+    form > input[type="submit"] {
+        background-color: #39395c;
+        cursor: pointer;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+        background-color: #e6e5ec;
+        color: #3c3c49;
+    }
+    section {
+        background-color: #f3f3f3;
+        border: 1px solid #d2d1e2;
+    }
+    section.top-bar { background: #66369e; }
+    a { color: #2f1a8b; }
+    h1, h2, h3, em { color: #131318; }
+    main > header > .pronouns, .reply > header, .thread {
+        color: #6b687e;
+    }
+    main > header { border-bottom: 1px dashed #6b687e; }
+    form > input, form > textarea {
+        background-color: #ffffff;
+        border: 1px solid #c5c5c5;
+    }
+    form > input[type="submit"] {
+        background-color: #4e3e80;
+        color: #ffffff;
+    }
+}
+
+section { border-radius: 5px; }
+
+.searchbar input[type="search"] {
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+.searchbar input[type="search"] + input[type="submit"] {
+    border-radius: 0 5px 5px 0;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+body { font-family: sans-serif; }
+section.top-bar { font-family: monospace; }
+
+dt { font-weight: 700; }
+
+.top-bar > nav > a { color: #ffffff; }
+.top-bar > nav > a.home { font-weight: 700; }
+
+a.sidebar-item, h3 > a, .thread > p > a { color: unset; }
+
+.reply > header > a, .thread > p > a { font-weight: 700; }
+
+a.sidebar-item:not(:hover), .reply > header > a:not(:hover), .thread a:not(:hover) { text-decoration: none; }
+
+.thread {
+    border-radius: 5px;
+    border: 1px dashed currentColor;
+}
+
+form > input, form > textarea {
+    color: unset;
+    font-family: unset;
+    border-radius: 3px;
+}
+
+.error:not(:empty)::before {
+    content: 'error: ';
+    color: #e95454;
+    font-weight: 700;
+}

@@ -1,0 +1,12 @@
+<header>
+    <h1>Signup</h1>
+</header>
+<p>Start sharing your amazing thoughts</p>
+<span class=error>{{insert-error-here}}</span>
+<form method=post action=/auth/signup>
+    <label for=user_name>User name</label>
+    <input type=text name=user_name pattern="[a-zA-Z0-9_-]+" required>
+    <label for=password>Password</label>
+    <input type=password name=password required>
+    <input type=submit value="Join the mob">
+</form>

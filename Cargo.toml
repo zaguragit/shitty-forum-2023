@@ -1,0 +1,18 @@
+[package]
+name = "lamda-network"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.3.1"
+actix-files = "0.6.2"
+openssl = { version = "0.10", features = ["vendored"] }
+sha2 = "0.10.6"
+rand = "0.8.5"
+thiserror = "1.0.40"
+regex = "1.7.3"
+chrono = "0.4.24"
+html-escape = "0.2.13"
+ammonia = "3.3.0"
+json = "0.12.4"
+serde = { version = "1.0.159", features = ["derive"] }
